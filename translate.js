@@ -11,8 +11,8 @@ const scriptName = "네이버 파파고 API를 이용한 번역기";
 
 Utils.papagoTranslate=function(lang1,lang2, value){
   try{var data=org.jsoup.Jsoup.connect("https://openapi.naver.com/v1/papago/n2mt")
-  .header("X-Naver-Client-Id","Y20mDx78IRBY1Ca_8951")
-  .header("X-Naver-Client-Secret","9tqL86m9vV")
+  .header("X-Naver-Client-Id","myID")
+  .header("X-Naver-Client-Secret","password")
   .data("source",lang1)
   .data("target", lang2)
   .data("text", value)
