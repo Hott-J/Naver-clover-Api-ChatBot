@@ -19,8 +19,8 @@ function requestCFR() {
     var api_url = 'https://openapi.naver.com/v1/vision/face';
     var file = new java.io.File("/sdcard/base.jpg");
     var res = JSON.parse(org.jsoup.Jsoup.connect(api_url)
-    .header('X-Naver-Client-Id',"Y20mDx78IRBY1Ca_8951" )
-    .header('X-Naver-Client-Secret',"9tqL86m9vV" )
+    .header('X-Naver-Client-Id',"myId" )
+    .header('X-Naver-Client-Secret',"password" )
     .data('image', file.getName(), new java.io.FileInputStream(file))
     .ignoreContentType(true)
     .post().text());
